@@ -27,17 +27,17 @@ const enHomePageData = {
       
     </ul>
     <h2 class='title'> Recent News </h2>
-    <li> <b>[June’24]</b>: Interviewed by <a href="https://www.darkreading.com/">Dark Reading</a>. </li>
+    <li> <b>[August’24]</b>: “State Machine Mutation-based Testing Framework for Wireless Communication Protocols” has been accepted to CCS’24. </li>
+    <li> <b>[August’24]</b>: 5GBaseChecker received distinguished paper award at the 33rd USENIX Security Symposium, 2024.</a>. </li>
     <li> <b>[June’24]</b>: Inducted in <a href="https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/">GSMA Mobile Security Research Acknowledgements</a> for identifying severe security issues in 5G commercial devices and 5G networks. </li>
     <li> <b>[June’24]</b>: Acknowledged in <a href="https://semiconductor.samsung.com/support/quality-support/product-security-updates/">Samsung Product Security Update</a> for several vulnerabilities in 5G baseband implementations. </li>
     <li> <b>[June’24]</b>: Samsung awarded $5,700 for for reporting high severity vulnerabilities in Samsung 5G baseband implementations. </li>
     <li> <b>[May’24]</b>: “<a href="https://www.blackhat.com/us-24/briefings/schedule/#cracking-the-g-fortress-peering-into-gs-vulnerability-abyss-40620">Cracking the 5G Fortress: Peering Into 5G’s Vulnerability Abyss</a>” has been accepted to be presented at the Blackhat USA 2024. </li>
     <li> <b>[April’24]</b>: Google awarded $3,000 for for reporting vulnerabilities in 4G devices. </li>
     <li> <b>[April’24]</b>: Acknowledged in <a href="https://www.unisoc.com/en_us/secy/thank">Unisoc Product Security Acknowledgements</a> for reporting vulnerabilities in Unisoc 5G baseband implementations. </li>
-    <li> <b>[March’24]</b>: “Logic Gone Astray: A Security Analysis Framework for the Control Plane Protocols of 5G Basebands” has been accepted at USENIX Security ‘24. </li>
+    <li> <b>[March’24]</b>: “Logic Gone Astray: A Security Analysis Framework for the Control Plane Protocols of 5G Basebands” has been accepted to USENIX Security ‘24. </li>
     <li> <b>[February’24]</b>: Google awarded $14,250 for for reporting high severity vulnerabilities in 5G devices. </li>
     <li> <b>[January’24]</b>: Start PhD journey! </li>
-    <li> <b>[October’23]</b>: “Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications” has been accepted at USENIX Security ‘24. </li>
     <li> <b>[October’23]</b>: “Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications” has been accepted at USENIX Security ‘24. </li>
     <li> <b>[May’23]</b>: “Inducted in <a href="https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/">GSMA Mobile Security Research Acknowledgements</a> for identifying security issues in specification design. </li>
     
@@ -58,6 +58,15 @@ const enPublicationsPageData = {
       github: "",
       download: "",
       writers: ["Kai Tu, Abdullah Al Ishtiaq, Syed Md Mukit Rashid, Yilu Dong, Weixuan Wang, Tianwei Wu, and Syed Rafiul Hussain "],
+    },
+    {
+      title: `State Machine Mutation-based Testing Framework for Wireless Communication Protocols`,
+      abstract: `This paper proposes Proteus, a protocol state machine, property-guided, and budget-aware automated testing approach for discovering logical vulnerabilities in wireless protocol implementations. Proteus maintains its budget awareness by generating test cases (i.e., each being a sequence of protocol messages) that are not only meaningful (i.e., the test case mostly follows the desirable protocol flow except for some controlled deviations) but also have a high probability of violating the desirable properties. To demonstrate its effectiveness, we evaluated Proteus in two different protocol implementations, namely 4G LTE and BLE, across 23 consumer devices (11 for 4G LTE and 12 for BLE). Proteus discovered 25 unique issues, including 112 instances. Affected vendors have positively acknowledged 14 vulnerabilities through 5 CVEs.`,
+      date: "",
+      link: "https://arxiv.org/abs/2409.02905",
+      github: "",
+      download: "",
+      writers: ["Syed Md Mukit Rashid, Tianwei Wu, Kai Tu, Abdullah Al Ishtiaq, Ridwanul Hasan Tanvir, Yilu Dong, Omar Chowdhury, Syed Rafiul Hussain"],
     },
     {
       title: `“Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications.`,
