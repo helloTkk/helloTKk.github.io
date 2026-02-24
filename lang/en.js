@@ -15,7 +15,7 @@ const enHomePageData = {
   home_title: "About me",
   home_content: `
   <div>
-    <p> I am a first-year Ph.D. student in the Department of Computer Science at <a href="https://www.psu.edu/"> Pennsylvania State University</a>, currently working as a Graduate Research Assistant under the guidance of <a href="https://syed-rafiul-hussain.github.io//">Prof. Syed Rafiul Hussain</a>.
+    <p> I am a third-year Ph.D. candidate in the Department of Computer Science at <a href="https://www.psu.edu/"> Pennsylvania State University</a>, currently working as a Graduate Research Assistant under the guidance of <a href="https://syed-rafiul-hussain.github.io//">Prof. Syed Rafiul Hussain</a>.
     </p>
     <h2 class='title'> Research Interest </h2>
     <p> My research interest broadly lies in security and privacy, with a focus on telecommunication networks and user devices. I aim to address security and privacy concerns by systematically analyzing and developing automatic vulnerability discovery technologies for emerging communication systems and protocols. My research interests include but are not limited to the following:
@@ -27,6 +27,14 @@ const enHomePageData = {
       
     </ul>
     <h2 class='title'> Recent News </h2>
+    <li> <b>[Oct’25]</b>: I passed the PhD qualification and comprehensive exams, officially becoming a PhD candidate! </li>
+    <li> <b>[July’25]</b>: Our talk, “Open RAN, Open Risk: Uncovering Threats and Exposing Vulnerabilities in Next-Gen Cellular RAN” has been accepted to Black Hat USA 2025. </li>
+    <li> <b>[June’25]</b>: Acknowledged in Google’s Android security acknowledgements for disclosing CVE-2025-26785; awarded a bounty for the report. </li>
+    <li> <b>[May’25]</b>: Our talk, “Uncovering ‘NASty’ 5G Baseband Vulnerabilities through Dependency-Aware Fuzzing” has been accepted to Black Hat USA 2025. </li>
+    <li> <b>[May’25]</b>: Acknowledged in Samsung’s Product Security Update Bulletins for disclosing CVE-2025-26784, CVE-2025-26785, and CVE-2025-27891; awarded a bounty for the reports. </li>
+    <li> <b>[March’25]</b>: “Stateful Analysis and Fuzzing of Commercial Baseband Firmware” has been accepted to the 46th IEEE Symposium on Security and Privacy. </li>
+    <li> <b>[March’25]</b>: Acknowledged in Samsung’s Product Security Update Bulletins for disclosing CVE-2024-52923 and CVE-2024-52924; awarded a bounty for the reports. </li>
+    <li> <b>[January’25]</b>: “CoreCrisis: Threat-Guided Context-Aware Black-Box Testing Framework for 5G Core Network Implementations” has been accepted to the 34th USENIX Security Symposium, 2025. </li>
     <li> <b>[August’24]</b>: “State Machine Mutation-based Testing Framework for Wireless Communication Protocols” has been accepted to CCS’24. </li>
     <li> <b>[August’24]</b>: 5GBaseChecker received distinguished paper award at the 33rd USENIX Security Symposium, 2024.</a>. </li>
     <li> <b>[June’24]</b>: Inducted in <a href="https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/">GSMA Mobile Security Research Acknowledgements</a> for identifying severe security issues in 5G commercial devices and 5G networks. </li>

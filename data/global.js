@@ -20,7 +20,7 @@ const globalData = {
   // googleScholarTitle: "Google Scholar title",
   // googleScholar: "@googleScholar",
   // linkedinTitle: "Linkedin Username",
-  linkedin: "https://www.linkedin.com/in/tu-kai-1814b3234/",
+  linkedin: "https://www.linkedin.com/in/kai-tu-1814b3234/",
   githubTitle: "helloTKk",
   github: "https://github.com/helloTKk",
   // orcidTitle: "Orcid Username",
