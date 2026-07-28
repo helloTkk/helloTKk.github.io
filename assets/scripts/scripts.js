@@ -101,7 +101,13 @@ $(document).ready(function () {
 
   // Publications page data
   const setPublicationData = (id, data) => {
-    document.getElementById(id).innerHTML = data
+    const container = document.getElementById(id);
+    if (!container || !data) return;
+
+    const footerLink = (url, label) =>
+      url ? `<li><a href="${url}" target="_blank">${label}</a></li>` : "";
+
+    container.innerHTML = data
       .map(
         (publication) =>
           `
@@ -119,23 +125,9 @@ $(document).ready(function () {
         </div>
         <p>${publication.abstract}</p>
         <ul class='publications_footer'>
-          ${
-            publication.link &&
-            `<li>
-                <a href=${publication.link} target="_blank"> ${
-              lang === "en" ? "View" : " مشاهده"
-            } </a>
-              </li>`
-          }
-            ${
-              publication.github &&
-              `<li>
-                  <a href=${publication.github} target="_blank">  ${
-                lang === "en" ? "Github" : "گیت‌هاب"
-              }</a>
-                </li>`
-            }
-          
+          ${footerLink(publication.link, lang === "en" ? "View" : "مشاهده")}
+          ${footerLink(publication.download, lang === "en" ? "PDF" : "دانلود")}
+          ${footerLink(publication.github, lang === "en" ? "Github" : "گیت‌هاب")}
         </ul>
       </div>
      `
@@ -143,57 +135,28 @@ $(document).ready(function () {
       .join("");
   };
 
+  const setPublicationTitle = (id, title) => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = title || "";
+  };
+
   function publicationsData() {
     document.getElementById("page_title").innerText =
       lang === "en" ? "Publications" : "مقالات";
 
-    document.getElementById("publications_type_one_title").innerHTML =
-      lang === "en"
-        ? enPublicationsPageData.type_one_title
-        : faPublicationsPageData.type_one_title;
+    const data =
+      lang === "en" ? enPublicationsPageData : faPublicationsPageData;
 
-    setPublicationData(
-      "publications_type_one_data",
-      lang === "en"
-        ? enPublicationsPageData.type_one_items
-        : faPublicationsPageData.type_one_items
-    );
-
-    document.getElementById("publications_type_two_title").innerHTML =
-      lang === "en"
-        ? enPublicationsPageData.type_two_title
-        : faPublicationsPageData.type_two_title;
-
-    setPublicationData(
-      "publications_type_two_data",
-      lang === "en"
-        ? enPublicationsPageData.type_two_items
-        : faPublicationsPageData.type_two_items
-    );
-
-    document.getElementById("publications_type_three_title").innerHTML =
-      lang === "en"
-        ? enPublicationsPageData.type_three_title
-        : faPublicationsPageData.type_three_title;
-
-    setPublicationData(
-      "publications_type_three_data",
-      lang === "en"
-        ? enPublicationsPageData.type_three_items
-        : faPublicationsPageData.type_three_items
-    );
-
-    document.getElementById("publications_type_four_title").innerHTML =
-      lang === "en"
-        ? enPublicationsPageData.type_four_title
-        : faPublicationsPageData.type_four_title;
-
-    setPublicationData(
-      "publications_type_four_data",
-      lang === "en"
-        ? enPublicationsPageData.type_four_items
-        : faPublicationsPageData.type_four_items
-    );
+    ["one", "two", "three", "four"].forEach((type) => {
+      setPublicationTitle(
+        `publications_type_${type}_title`,
+        data[`type_${type}_title`]
+      );
+      setPublicationData(
+        `publications_type_${type}_data`,
+        data[`type_${type}_items`]
+      );
+    });
   }
 
   if (pathname === "/publications") {
