@@ -127,6 +127,110 @@
   margin-bottom: 0.4rem;
 }
 
+/* Keep the profile column at the top while the content column scrolls */
+@media (min-width: 992px) {
+  .main_header {
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+
+  .main_header_info {
+    position: sticky;
+    top: 2rem;
+  }
+
+  .main_header_content .title:first-child {
+    margin-top: 0;
+  }
+}
+
+/* Recent news */
+.main_header ul.news_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news_list li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.5;
+}
+
+.news_list li:last-child {
+  border-bottom: none;
+}
+
+.news_date {
+  flex: 0 0 5.2rem;
+  color: #888;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.05rem;
+}
+
+.news_more {
+  margin-top: 0.5rem;
+}
+
+.news_more summary {
+  cursor: pointer;
+  color: #0d6efd;
+  font-size: 0.95rem;
+  padding: 0.4rem 0;
+  user-select: none;
+}
+
+.news_more[open] summary {
+  margin-bottom: 0.25rem;
+}
+
+.callout {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #f3f7ff;
+  border-left: 4px solid #0d6efd;
+  border-radius: 4px;
+}
+
+/* Honors and vulnerability disclosures */
+.main_header ul.honor_list li {
+  margin-bottom: 0.4rem;
+}
+
+.main_header ul.vuln_list {
+  list-style: none;
+  padding: 0;
+}
+
+.vuln_list li {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.vuln_title {
+  padding: 0.55rem 0 0.25rem;
+}
+
+.cve_count {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0d6efd;
+  background-color: #eef4ff;
+  border-radius: 999px;
+}
+
+.cve_ids {
+  padding: 0 0 0.75rem 0;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.7;
+}
+
 #home_links {
   display: flex;
   align-items: center;

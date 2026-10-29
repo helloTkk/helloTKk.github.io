@@ -17,6 +17,7 @@ const enHomePageData = {
   <div>
     <p> I am a third-year Ph.D. candidate in the Department of Computer Science at <a href="https://www.psu.edu/"> Pennsylvania State University</a>, currently working as a Graduate Research Assistant under the guidance of <a href="https://syed-rafiul-hussain.github.io//">Prof. Syed Rafiul Hussain</a>.
     </p>
+    <div class='callout'> 🔍 I am looking for a <b>security research internship for Summer 2027</b>. I would greatly appreciate it if anyone could share relevant opportunities. </div>
     <h2 class='title'> Research Interest </h2>
     <p> My research interest broadly lies in security and privacy, with a focus on telecommunication networks and user devices. I aim to address security and privacy concerns by systematically analyzing and developing automatic vulnerability discovery technologies for emerging communication systems and protocols. My research interests include but are not limited to the following:
     </p>
@@ -27,33 +28,84 @@ const enHomePageData = {
       
     </ul>
     <h2 class='title'> Recent News </h2>
-    <ul>
-    <li> <b>[May’26]</b>: “VUPER: Verified ASN.1 UPER Parser” has been accepted to the 33rd ACM Conference on Computer and Communications Security (CCS’26). </li>
-    <li> <b>[April’26]</b>: “LogicEval: A Systematic Framework for Evaluating Automated Repair Techniques for Logical Vulnerabilities in Real-World Software” has been accepted to the 64th Annual Meeting of the Association for Computational Linguistics (ACL’26). </li>
-    <li> <b>[April’26]</b>: “Guardians of the Air: In-Device Detection of 5G Control-Plane Threats” has been accepted to the 47th IEEE Symposium on Security and Privacy (IEEE S&amp;P’26). </li>
-    <li> <b>[Oct’25]</b>: I passed the PhD qualification and comprehensive exams, officially becoming a PhD candidate! </li>
-    <li> <b>[July’25]</b>: Our talk, “Open RAN, Open Risk: Uncovering Threats and Exposing Vulnerabilities in Next-Gen Cellular RAN” has been accepted to Black Hat USA 2025. </li>
-    <li> <b>[June’25]</b>: Google awarded $29,250 for reporting 1 critical- and 2 high-severity vulnerabilities in Pixel phones. </li>
-    <li> <b>[June’25]</b>: Acknowledged in Google’s Android security acknowledgements for disclosing CVE-2025-26785; awarded a bounty for the report. </li>
-    <li> <b>[May’25]</b>: Our talk, “Uncovering ‘NASty’ 5G Baseband Vulnerabilities through Dependency-Aware Fuzzing” has been accepted to Black Hat USA 2025. </li>
-    <li> <b>[May’25]</b>: Samsung awarded $10,712 for reporting 2 high- and 3 medium-severity vulnerabilities in Galaxy phones. </li>
-    <li> <b>[May’25]</b>: Acknowledged in Samsung’s Product Security Update Bulletins for disclosing CVE-2025-26784, CVE-2025-26785, and CVE-2025-27891; awarded a bounty for the reports. </li>
-    <li> <b>[March’25]</b>: “Stateful Analysis and Fuzzing of Commercial Baseband Firmware” has been accepted to the 46th IEEE Symposium on Security and Privacy. </li>
-    <li> <b>[March’25]</b>: Acknowledged in Samsung’s Product Security Update Bulletins for disclosing CVE-2024-52923 and CVE-2024-52924; awarded a bounty for the reports. </li>
-    <li> <b>[January’25]</b>: “CoreCrisis: Threat-Guided Context-Aware Black-Box Testing Framework for 5G Core Network Implementations” has been accepted to the 34th USENIX Security Symposium, 2025. </li>
-    <li> <b>[August’24]</b>: “State Machine Mutation-based Testing Framework for Wireless Communication Protocols” has been accepted to CCS’24. </li>
-    <li> <b>[August’24]</b>: 5GBaseChecker received distinguished paper award at the 33rd USENIX Security Symposium, 2024. </li>
-    <li> <b>[June’24]</b>: Inducted in <a href="https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/">GSMA Mobile Security Research Acknowledgements</a> for identifying severe security issues in 5G commercial devices and 5G networks. </li>
-    <li> <b>[June’24]</b>: Acknowledged in <a href="https://semiconductor.samsung.com/support/quality-support/product-security-updates/">Samsung Product Security Update</a> for several vulnerabilities in 5G baseband implementations. </li>
-    <li> <b>[June’24]</b>: Samsung awarded $5,700 for reporting high severity vulnerabilities in Samsung 5G baseband implementations. </li>
-    <li> <b>[May’24]</b>: “<a href="https://www.blackhat.com/us-24/briefings/schedule/#cracking-the-g-fortress-peering-into-gs-vulnerability-abyss-40620">Cracking the 5G Fortress: Peering Into 5G’s Vulnerability Abyss</a>” has been accepted to be presented at the Blackhat USA 2024. </li>
-    <li> <b>[April’24]</b>: Google awarded $3,000 for reporting vulnerabilities in 4G devices. </li>
-    <li> <b>[April’24]</b>: Acknowledged in <a href="https://www.unisoc.com/en_us/secy/thank">Unisoc Product Security Acknowledgements</a> for reporting vulnerabilities in Unisoc 5G baseband implementations. </li>
-    <li> <b>[March’24]</b>: “Logic Gone Astray: A Security Analysis Framework for the Control Plane Protocols of 5G Basebands” has been accepted to USENIX Security ‘24. </li>
-    <li> <b>[February’24]</b>: Google awarded $14,250 for reporting high severity vulnerabilities in 5G devices. </li>
-    <li> <b>[January’24]</b>: Start PhD journey! </li>
-    <li> <b>[October’23]</b>: “Hermes: Unlocking Security Analysis of Cellular Network Protocols by Synthesizing Finite State Machines from Natural Language Specifications” has been accepted at USENIX Security ‘24. </li>
-    <li> <b>[May’23]</b>: Inducted in <a href="https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/">GSMA Mobile Security Research Acknowledgements</a> for identifying security issues in specification design. </li>
+    <ul class='news_list'>
+      <li><span class='news_date'>Oct 2026</span><span>🎉 <b>Octopus</b>, our target-aware field-level fuzzer for cellular ASN.1 protocols, has been accepted to <b>IEEE S&amp;P 2027</b>. It uncovered 38 new vulnerabilities (22 CVEs) in commercial cellular targets.</span></li>
+      <li><span class='news_date'>May 2026</span><span>🎉 <b>VUPER</b>, a verified ASN.1 UPER parser, has been accepted to <b>ACM CCS 2026</b>.</span></li>
+      <li><span class='news_date'>Apr 2026</span><span><b>LogicEval</b>, a framework for evaluating automated repair of logical vulnerabilities, has been accepted to <b>ACL 2026</b>.</span></li>
+      <li><span class='news_date'>Apr 2026</span><span><b>5GShield</b>, in-device detection of 5G control-plane threats, has been accepted to <b>IEEE S&amp;P 2026</b>.</span></li>
+      <li><span class='news_date'>Oct 2025</span><span>Passed the qualifying and comprehensive exams and officially became a PhD candidate.</span></li>
+      <li><span class='news_date'>Jul 2025</span><span>Our talk “Open RAN, Open Risk” has been accepted to <b>Black Hat USA 2025</b>.</span></li>
+    </ul>
+    <details class='news_more'>
+      <summary>Earlier news</summary>
+      <ul class='news_list'>
+        <li><span class='news_date'>Jun 2025</span><span>Google awarded $29,250 for 1 critical- and 2 high-severity vulnerabilities in Pixel phones; acknowledged in Android security acknowledgements (CVE-2025-26785).</span></li>
+        <li><span class='news_date'>May 2025</span><span>Our talk “Uncovering ‘NASty’ 5G Baseband Vulnerabilities through Dependency-Aware Fuzzing” has been accepted to <b>Black Hat USA 2025</b>.</span></li>
+        <li><span class='news_date'>May 2025</span><span>Samsung awarded $10,712 for 2 high- and 3 medium-severity vulnerabilities in Galaxy phones (CVE-2025-26784, CVE-2025-26785, CVE-2025-27891).</span></li>
+        <li><span class='news_date'>Mar 2025</span><span><b>LORIS</b>, stateful analysis and fuzzing of commercial baseband firmware, has been accepted to <b>IEEE S&amp;P 2025</b>.</span></li>
+        <li><span class='news_date'>Mar 2025</span><span>Acknowledged in Samsung’s Product Security Update Bulletins for CVE-2024-52923 and CVE-2024-52924.</span></li>
+        <li><span class='news_date'>Jan 2025</span><span><b>CoreCrisis</b>, a black-box testing framework for 5G core networks, has been accepted to <b>USENIX Security 2025</b>.</span></li>
+        <li><span class='news_date'>Aug 2024</span><span>🏆 <b>5GBaseChecker</b> received the <b>Distinguished Paper Award</b> at USENIX Security 2024.</span></li>
+        <li><span class='news_date'>Aug 2024</span><span><b>Proteus</b>, state machine mutation-based testing for wireless protocols, has been accepted to <b>ACM CCS 2024</b>.</span></li>
+        <li><span class='news_date'>Jun 2024</span><span>Inducted into the <a href="https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/">GSMA Mobile Security Research Acknowledgements</a> and <a href="https://semiconductor.samsung.com/support/quality-support/product-security-updates/">Samsung Product Security Update</a>; Samsung awarded $5,700 for high-severity 5G baseband vulnerabilities.</span></li>
+        <li><span class='news_date'>May 2024</span><span>Our talk “<a href="https://www.blackhat.com/us-24/briefings/schedule/#cracking-the-g-fortress-peering-into-gs-vulnerability-abyss-40620">Cracking the 5G Fortress: Peering Into 5G’s Vulnerability Abyss</a>” has been accepted to <b>Black Hat USA 2024</b>.</span></li>
+        <li><span class='news_date'>Apr 2024</span><span>Google awarded $3,000 for vulnerabilities in 4G devices; acknowledged in <a href="https://www.unisoc.com/en_us/secy/thank">Unisoc Product Security Acknowledgements</a>.</span></li>
+        <li><span class='news_date'>Mar 2024</span><span><b>5GBaseChecker</b> (“Logic Gone Astray”) has been accepted to <b>USENIX Security 2024</b>.</span></li>
+        <li><span class='news_date'>Feb 2024</span><span>Google awarded $14,250 for high-severity vulnerabilities in 5G devices.</span></li>
+        <li><span class='news_date'>Jan 2024</span><span>Started my PhD journey at Penn State!</span></li>
+        <li><span class='news_date'>Oct 2023</span><span><b>Hermes</b>, synthesizing FSMs from cellular specifications, has been accepted to <b>USENIX Security 2024</b>.</span></li>
+        <li><span class='news_date'>May 2023</span><span>Inducted into the <a href="https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/">GSMA Mobile Security Research Acknowledgements</a> for identifying specification-level security issues.</span></li>
+      </ul>
+    </details>
+    <h2 class='title'> Honors &amp; Awards </h2>
+    <ul class='honor_list'>
+      <li> 🏆 <b>Distinguished Paper Award</b>, USENIX Security Symposium, 2024 (5GBaseChecker) </li>
+      <li> <b>$62,912</b> in Google and Samsung security rewards, 2024–2025 </li>
+      <li> Security acknowledgements from <b>Google, Samsung, UNISOC, and Qualcomm</b> </li>
+      <li> <a href="https://www.gsma.com/solutions-and-impact/technologies/security/gsma-mobile-security-research-acknowledgements/">GSMA Mobile Security Research Hall of Fame</a>, 2023 and 2024 </li>
+      <li> Speaker at <b>Black Hat USA</b> 2024 and 2025 (3 talks) </li>
+    </ul>
+    <h2 class='title'> Vulnerability Disclosures </h2>
+    <ul class='vuln_list'>
+      <li>
+        <div class='vuln_title'><b>Octopus</b>: 38 new vulnerabilities in commercial cellular targets <span class='cve_count'>22 CVEs</span></div>
+        <div class='cve_ids'>
+          <b>Samsung Exynos:</b> CVE-2026-33970, CVE-2026-33958<br>
+          <b>UNISOC:</b> CVE-2026-21539, CVE-2026-21541, CVE-2026-21540, CVE-2026-21538, CVE-2026-21543, CVE-2026-21542, CVE-2026-21545, CVE-2026-21544, CVE-2026-21546, CVE-2025-71256, CVE-2026-21549, CVE-2026-21550, CVE-2026-21551, CVE-2026-21552, CVE-2026-21553, CVE-2026-92350, CVE-2026-92351, CVE-2026-92352<br>
+          <b>MediaTek:</b> CVE-2026-20479, CVE-2026-68671<br>
+          Additional issues confirmed by Qualcomm and Apple; an Amarisoft core-network issue patched.
+        </div>
+      </li>
+      <li>
+        <div class='vuln_title'><b>5GBaseChecker</b>: 22 implementation issues in 5G basebands <span class='cve_count'>12 CVEs</span></div>
+        <div class='cve_ids'>
+          CVE-2024-29152, CVE-2024-28818, CVE-2023-52534, CVE-2023-52533, CVE-2023-52344, CVE-2023-52343, CVE-2023-52342, CVE-2023-52341, CVE-2023-50804, CVE-2023-50803, CVE-2023-49928, CVE-2023-49927
+        </div>
+      </li>
+      <li>
+        <div class='vuln_title'><b>Open 5G RAN (OpenAirInterface)</b>: implementation vulnerabilities in functionally split RAN <span class='cve_count'>7 CVEs</span></div>
+        <div class='cve_ids'>
+          CVE-2024-57330, CVE-2024-57331, CVE-2024-57332, CVE-2024-57333, CVE-2024-57334, CVE-2025-45420, CVE-2025-45421
+        </div>
+      </li>
+      <li>
+        <div class='vuln_title'><b>LORIS</b>: 7 new vulnerabilities in commercial LTE/5G baseband firmware <span class='cve_count'>5 CVEs</span></div>
+        <div class='cve_ids'>
+          CVE-2024-52923, CVE-2024-52924, CVE-2025-26784, CVE-2025-26785, CVE-2025-27891
+        </div>
+      </li>
+      <li>
+        <div class='vuln_title'><b>Proteus</b>: vulnerabilities in commercial basebands <span class='cve_count'>2 CVEs</span></div>
+        <div class='cve_ids'>
+          CVE-2024-32911, CVE-2024-38426
+        </div>
+      </li>
+      <li>
+        <div class='vuln_title'><b>GSMA coordinated disclosures</b> <span class='cve_count'>3 CVDs</span></div>
+        <div class='cve_ids'>
+          CVD-2026-0117, CVD-2023-0081, CVD-2023-0071
+        </div>
+      </li>
     </ul>
   </div>
   `,
@@ -65,9 +117,18 @@ const enPublicationsPageData = {
 
   type_one_items: [
     {
+      title: `Octopus: Target-Aware Adaptive Field-level Fuzzing for Cellular ASN.1 Protocols`,
+      abstract: ``,
+      date: "IEEE Symposium on Security and Privacy (IEEE S&amp;P), 2027 — First Author",
+      link: "https://syed-rafiul-hussain.github.io/index.php/publications/1462/",
+      github: "",
+      download: "",
+      writers: ["<b>Kai Tu</b>, Tianchang Yang, Xiaotian Zhou, Ali Ranjbar, Abdullah Al Ishtiaq, Tianwei Wu, Yilu Dong, and Syed Rafiul Hussain"],
+    },
+    {
       title: `Logic Gone Astray: A Security Analysis Framework for the Control Plane Protocols of 5G Basebands`,
       abstract: `We develop 5GBaseChecker— an efficient, scalable, and dynamic security analysis framework based on differential testing for analyzing 5G basebands' control plane protocol interactions. 5GBaseChecker first captures basebands' protocol behaviors as a finite state machine (FSM) through black-box automata learning. To facilitate efficient learning and improve scalability, 5GBaseChecker introduces novel hybrid and collaborative learning techniques. 5GBaseChecker then identifies input sequences for which the extracted FSMs provide deviating outputs. Finally, 5GBaseChecker leverages these deviations to efficiently identify the security properties from specifications and use those to triage if the deviations found in 5G basebands violate any properties. We evaluated 5GBaseChecker with 17 commercial 5G basebands and 2 open-source UE implementations and uncovered 22 implementation-level issues, including 13 exploitable vulnerabilities and 2 interoperability issues.`,
-      date: "USENIX Security Symposium (USENIX Security), 2024 — Distinguished Paper Award",
+      date: "USENIX Security Symposium (USENIX Security), 2024 — First Author, Distinguished Paper Award",
       link: "https://www.usenix.org/conference/usenixsecurity24/presentation/tu",
       github: "https://github.com/SyNSec-den/5GBaseChecker",
       download: "https://syed-rafiul-hussain.github.io/wp-content/uploads/2024/03/5GBaseChecker-USENIX-Security-24.pdf",
